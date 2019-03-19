@@ -1,0 +1,14 @@
+<h1>index</h1>
+<% @songs.each do |song| %>
+<%= label_tag 'title:' %>
+  <%=link_to song.title, song_path(song)  %><br>
+  <%= label_tag 'released:' %>
+  <%= song.released  %><br>
+  <%= label_tag 'released_year:' %>
+  <%= song.released_year  %><br>
+  <%= label_tag 'artist_name:' %>
+  <%= song.artist_name  %><br>
+  <%= label_tag 'genre:' %>
+  <%= song.genre  %><br><br><br>
+
+<% end %>
